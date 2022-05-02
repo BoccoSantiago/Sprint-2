@@ -5,6 +5,10 @@ $primary: #5265E1;
 $secondary: #FA5959;
 $dark: rgb(22, 22, 72);
 
-
+#demo {
+    -webkit-box-shadow: 25px 18px 0px 0px #000000;
+    border-radius: 0px 0px 0px 100px; 
+    box-shadow: 25px 18px 0px 0px #000000;
+    }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
