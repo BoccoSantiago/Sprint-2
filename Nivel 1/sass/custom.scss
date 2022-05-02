@@ -4,11 +4,32 @@ $font-family-sans-serif: 'Radio Canada', sans-serif;
 $primary: #5265E1;
 $secondary: #FA5959;
 $dark: rgb(22, 22, 72);
+$nav-link-hover-color: $secondary !important;
 
-#demo {
-    -webkit-box-shadow: 25px 18px 0px 0px #000000;
+
+               
+$accordion-border-color:rgba(255, 255, 255, 0);            
+$accordion-button-active-bg:rgba(255, 255, 255, 0) ;        
+$accordion-button-active-color: $secondary;
+$accordion-icon-color: $primary;
+$accordion-button-focus-border-color: rgba(255, 255, 255, 0);
+
+$nav-pills-link-active-color: $primary;
+$nav-pills-link-active-bg:rgba(0, 0, 0, 0);
+
+.img-hero {
+    
     border-radius: 0px 0px 0px 100px; 
-    box-shadow: 25px 18px 0px 0px #000000;
-    }
+    box-shadow: 100px 100px 0px -15px #5265E1;
+   
+    };
+
+.nav-link:hover {
+    color: #121111;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+

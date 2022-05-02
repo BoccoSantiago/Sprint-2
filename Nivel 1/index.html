@@ -13,9 +13,9 @@
   <title>Bootstrap 5</title>
 </head>
 
-<body>  
+<body>
   <header>
-    <div class="container-fluid">
+    <div>
       <nav class="container navbar navbar-expand-md navbar-light">
         <div class="container">
           <a class="navbar-brand" href="#"><img src="Imagenes/logo-bookmark.svg" class="float-left" alt=""></a>
@@ -25,11 +25,10 @@
           </button>
           <div class="collapse navbar-collapse pe-xl-5 justify-content-end m-md-3" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-item nav-link px-md-3 me-md-3 text-center" aria-current="page" href="#">Features<span
-                  class="sr-only"></span></a>
-              <a class="nav-item nav-link px-md-3 me-md-3 text-center" href="#">Pricing</a>
-              <a class="nav-item nav-link px-md-3 me-md-3 text-center" href="#">Contact</a>
-              <a class="btn btn-outline-danger ms-lg-1" href="#">Login</a>
+              <a class="nav-item nav-link px-md-3 me-md-3 text-center" href="#">FEATURES</a>
+              <a class="nav-item nav-link px-md-3 me-md-3 text-center" href="#">PRICING</a>
+              <a class="nav-item nav-link px-md-3 me-md-3 text-center" href="#">CONTACT</a>
+              <a class="btn btn-secondary text-white px-3 ms-lg-1" href="#">LOGIN</a>
             </div>
           </div>
         </div>
@@ -37,15 +36,16 @@
     </div>
   </header>
 
-  <main>
-    <div class="container">
+  <main class="container">
+    <div>
       <div class="row flex-md-row-reverse">
-        <div class="col-md-6 text-md-center">
-          <img src="imagenes/illustration-hero.svg" class="img-fluid pt-5" alt="">
+        <div class="col-md-6 text-md-center" >
+          <img src="imagenes/illustration-hero.svg" class="img-fluid pt-5 img-hero" id="">
         </div>
         <div class="col-md-6 text-center text-md-start ps-md-4 pe-md-2 pt-md-5 pe-lg-5 px-5">
           <h1>A Simple Bookmark Manager</h1>
-          <p class="text-muted">A clean and simple interface to recognize your favourite websites. Open a new browser tab and see your
+          <p class="text-muted">A clean and simple interface to recognize your favourite websites. Open a new browser
+            tab and see your
             sites load instantly. try it for free.</p>
           <div class="d-flex gap-2 justify-content-center justify-content-md-start">
             <a class="btn btn-primary shadow" href="#" role="button">Get it on Chrome</a>
@@ -63,7 +63,7 @@
       </div>
     </div>
     <div class="text-center mx-auto col-md-10" id="features">
-      <ul class="nav nav-tabs flex-md-row flex-column justify-content-center" id="myTab" role="tablist">
+      <ul class="nav nav-pills flex-md-row flex-column justify-content-center" id="myTab" role="tablist">
         <li class="nav-item mx-auto mx-md-1" role="presentation">
           <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
             role="tab" aria-controls="home" aria-selected="true">Simple Bookmarking</button>
@@ -79,7 +79,7 @@
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-          <div class="container">
+          <div>
             <div class="row">
               <div class="col-md-6 text-md-center">
                 <img src="imagenes/illustration-features-tab-1.svg" class="float-left img-fluid p-4 pt-5" alt="">
@@ -94,7 +94,7 @@
           </div>
         </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          <div class="container">
+          <div>
             <div class="row">
               <div class="col-md-6 text-md-center">
                 <img src="imagenes/illustration-features-tab-2.svg" class="float-left img-fluid p-4 pt-5" alt="">
@@ -109,7 +109,7 @@
           </div>
         </div>
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-          <div class="container">
+          <div>
             <div class="row">
               <div class="col-md-6 text-md-center">
                 <img src="imagenes/illustration-features-tab-3.svg" class="float-left img-fluid p-4 pt-5" alt="">
@@ -173,7 +173,8 @@
       <div class="row justify-content-center pt-5">
         <div class="col-md-6 text-center p-3 m-3">
           <h2>Frequently Asked Questions</h2>
-          <p class="text-muted px-3 px-md-0">Here are some of our FAQs. If you have any other questions you'd like answered
+          <p class="text-muted px-3 px-md-0">Here are some of our FAQs. If you have any other questions you'd like
+            answered
             please feel free to email us.</p>
         </div>
       </div>
@@ -190,7 +191,7 @@
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
               data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit earum id tempora
+              <div class="accordion-body text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit earum id tempora
                 accusantium fugit nostrum alias atque rerum illum veritatis. Pariatur maiores optio eius, fugit odit
                 dolores dolorem sapiente facilis?</div>
             </div>
@@ -204,7 +205,7 @@
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
               data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam qui sit aut
+              <div class="accordion-body text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam qui sit aut
                 eaque libero sapiente eum nam labore, est nesciunt optio aliquam exercitationem, fuga perferendis earum
                 animi similique expedita vel.</div>
             </div>
@@ -218,8 +219,8 @@
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+              <div class="accordion-body text-muted">Placeholder content for this accordion, which is intended to demonstrate the
+                accordion-flush class. This is the third item's accordion body. Nothing more exciting
                 happening here in terms of content, but just filling up the space to make it look, at least at first
                 glance, a bit more representative of how this would look in a real-world application.
               </div>
@@ -234,8 +235,7 @@
             </h2>
             <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
               data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+              <div class="accordion-body text-muted">Placeholder content for this accordion, which is intended to demonstrate the accordion-flushclass. This is the third item's accordion body. Nothing more exciting
                 happening here in terms of content, but just filling up the space to make it look, at least at first
                 glance, a bit more representative of how this would look in a real-world application.
               </div>
@@ -249,56 +249,57 @@
     </div>
   </main>
 
-  <footer class="container">
-    <div class="bg-primary py-2">
-      <div class="col-md-6 col-lg-5 col-xl-4 my-5 px-3 mx-md-auto">
-        <div class="text-center px-md-1">
-          <p class="text-white">35,000 ALREADY JOINED</p>
-          <H2 class="text-white">Stay up-to-date with what we're doing</H2>
-        </div>
-        <form class="text-center p-1">
-          <div class="d-md-flex my-3">
+<section class="container-fluid bg-primary py-2"">
+    <div class=" col-md-6 col-lg-5 col-xl-4 my-5 px-3 mx-md-auto">
+     <div class="text-center px-md-1">
+       <p class="text-white">35,000 ALREADY JOINED</p>
+       <H2 class="text-white">Stay up-to-date with what we're doing</H2>
+     </div>
+        <form class="text-center p-1 was-validated">
+          <div class="d-md-flex gap-2 my-3">
+          <div>
             <input type="email" class="form-control me-md-3" id="inputEmail" aria-describedby="email"
-              placeholder="Enter your email address">
+              placeholder="Enter your email address" required>
+            <div class="invalid-feedback bg-secondary bg-lg  text-white rounded pt-0 m-0">
+              Whoops, make sure it's an email
+            </div>  
+          </div>
             <div class="col-md-4">
-              <button type="submit" value="submit" class="btn btn-secondary text-white col-12 mt-3 mt-md-0">Contact
-                Us</button>
+            <button type="submit" value="submit" class="btn btn-secondary text-white col-12 mt-3 mt-md-0">Contact
+            Us</button>
             </div>
-
           </div>
         </form>
+   </div>
+  </section>
+
+  <footer class="bg-dark">
+    <ul class="nav flex-md-row flex-column text-center  px-5 pt-5">
+      <li class="nav-item pb-5 pt-md-1">
+        <a class="navbar-brand" s href="#"><img src="Imagenes/logo-bookmark.svg" class="" id="logo-white" alt=""></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">FEATURES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">PRICING</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">CONTACT</a>
+      </li>
+      <div class="d-flex justify-content-center py-3 pt-md-0 ms-md-auto">
+        <a class="nav-link" href="#"><img src="Imagenes/icon-facebook.svg" class="" alt=""></a></a>
+        </li>
+        <a class="nav-link " href="#"><img src="Imagenes/icon-twitter.svg" class="" alt=""></a>
+        </li>
       </div>
-    </div>
-    <div class="bg-dark p-5">
-      <ul class="nav flex-md-row flex-column text-center align-md-middle">
-        <li class="nav-item pb-5 pt-md-1">
-          <a class="navbar-brand" s href="#"><img src="Imagenes/logo-bookmark.svg" class="" alt=""></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#">FEATURES</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#">PRICING</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">CONTACT</a>
-        </li>
-        <div class="d-flex justify-content-center pt-3 pt-md-0 ms-md-auto">
-
-          <a class="nav-link" href="#"><img src="Imagenes/icon-facebook.svg" class="" alt=""></a></a>
-          </li>
-          <a class="nav-link " href="#"><img src="Imagenes/icon-twitter.svg" class="" alt=""></a>
-          </li>
-        </div>
-      </ul>
-
-    </div>
+    </ul>
   </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
+    </script>
 
 </body>
 
