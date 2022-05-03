@@ -11,26 +11,42 @@ $nav-link-focus-color: black !important ;
        
 $accordion-border-color:rgba(255, 255, 255, 0);            
 $accordion-button-active-bg:rgba(255, 255, 255, 0) ;        
-$accordion-button-active-color: $secondary;
-$accordion-icon-color: $primary;
+$accordion-button-active-color: black;
+$accordion-icon-color: black;
+$accordion-icon-active-color: $secondary;
 $accordion-button-focus-border-color: rgba(255, 255, 255, 0);
 
-//$nav-pills-link-active-color: $primary;
-//$nav-pills-link-active-bg:rgba(0, 0, 0, 0);
+$nav-pills-link-active-color: $dark;
+$nav-pills-link-active-bg:rgba(0, 0, 0, 0);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+header a{
+    font-weight: 1000;
+}
+
+footer a{
+    font-weight: 700;
+}
+
+
+/////////////////////////////////////////////////////
+
+//////////////////////////////////////////////
 
 .img-hero {
-    border-radius: 0px 0px 0px 170px; 
+    border-radius: 170px 0px 0px 170px; 
     background: #5265E1;
     height: 70%;
-    width: 95%;
+    width: 80%;
     position: relative;
     top: -70%;
-    right: -7%;
+    right: -23%;
     z-index: -1;
-    
-    
-
     };
+
 .img-tab1 {
         border-radius: 0px 0px 170px 0px; 
         background: #5265E1;
@@ -40,19 +56,17 @@ $accordion-button-focus-border-color: rgba(255, 255, 255, 0);
         left: -20%;
         bottom: 60%;
         z-index: -1;
-        overflow: hidden;
         };    
 
 .img-tab {
     border-radius: 0px 170px 170px 0px; 
     background: #5265E1;
-    height: 80%;
+    height: 70%;
     width: 100%;
     position: relative;
     left: -20%;
     bottom: 70%;
     z-index: -1;
-    overflow: hidden;
     };
   
 
@@ -90,11 +104,6 @@ $accordion-button-focus-border-color: rgba(255, 255, 255, 0);
  
 };
 
-.nav-pills .nav-link{
-    border-bottom: #FA5959;
-    background: none;
-    color: black;
-}
 
 .nav-toggle {
     background: rgba(0, 0, 0, 0.387);
@@ -105,7 +114,23 @@ $accordion-button-focus-border-color: rgba(255, 255, 255, 0);
 };
 
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.nav .nav-item .nav-link:focus, .nav .nav-item .nav-link:active{
+    border-bottom: 3px solid #FA5959;
+    border-radius: 0;
+}
+
+.nav .nav-item .nav-link{
+    color: black;
+}
+
+.nav {
+    border-bottom: 1px solid #b2b2b2;
+    border-radius: 0;
+    
+}
+        
+
 
 
 
