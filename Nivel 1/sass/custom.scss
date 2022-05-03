@@ -25,11 +25,15 @@ $nav-pills-link-active-bg:rgba(0, 0, 0, 0);
 
 header a{
     font-weight: 1000;
-}
+};
+
+main {
+    overflow: hidden;
+};
 
 footer a{
     font-weight: 700;
-}
+};
 
 
 /////////////////////////////////////////////////////
@@ -39,10 +43,10 @@ footer a{
 .img-hero {
     border-radius: 170px 0px 0px 170px; 
     background: #5265E1;
-    height: 70%;
-    width: 80%;
+    height: 60%;
+    width: 100%;
     position: relative;
-    top: -70%;
+    top: -60%;
     right: -23%;
     z-index: -1;
     };
@@ -115,8 +119,13 @@ footer a{
 
 
 
-.nav .nav-item .nav-link:focus, .nav .nav-item .nav-link:active{
-    border-bottom: 3px solid #FA5959;
+.nav .nav-item .nav-link:focus{
+    border-bottom: 3px solid #FA5959 !important;
+    border-radius: 0;
+}
+
+.nav .nav-item .nav-link:active{
+    border-bottom: 3px solid #FA5959 !important;
     border-radius: 0;
 }
 
