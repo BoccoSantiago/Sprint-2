@@ -16,7 +16,7 @@ $accordion-icon-color: black;
 $accordion-icon-active-color: $secondary;
 $accordion-button-focus-border-color: rgba(255, 255, 255, 0);
 
-$nav-pills-link-active-color: $dark;
+$nav-pills-link-active-color: black;
 $nav-pills-link-active-bg:rgba(0, 0, 0, 0);
 
 
@@ -24,21 +24,26 @@ $nav-pills-link-active-bg:rgba(0, 0, 0, 0);
 
 
 header a{
-    font-weight: 1000;
+    font-weight: 500;
 };
 
 main {
     overflow: hidden;
-};
+    .nav {
+        border-bottom: 1px solid #e5e5e5;
+        border-radius: 0;   
+        }
+    };
+
 
 footer a{
-    font-weight: 700;
+    font-weight: 500;
 };
 
 
-/////////////////////////////////////////////////////
-
-//////////////////////////////////////////////
+.logo-bookmark {
+    color: white;
+};
 
 .img-hero {
     border-radius: 170px 0px 0px 170px; 
@@ -52,14 +57,14 @@ footer a{
     };
 
 .img-tab1 {
-        border-radius: 0px 0px 170px 0px; 
-        background: #5265E1;
-        height: 70%;
-        width: 100%;
-        position: relative;
-        left: -20%;
-        bottom: 60%;
-        z-index: -1;
+    border-radius: 0px 0px 170px 0px; 
+    background: #5265E1;
+    height: 70%;
+    width: 120%;
+    position: relative;
+    left: -30%;
+    bottom: 60%;
+    z-index: -1;
         };    
 
 .img-tab {
@@ -68,7 +73,7 @@ footer a{
     height: 70%;
     width: 100%;
     position: relative;
-    left: -20%;
+    left: -25%;
     bottom: 70%;
     z-index: -1;
     };
@@ -118,29 +123,36 @@ footer a{
 };
 
 
+main{
+.nav .nav-item .nav-link {
 
-.nav .nav-item .nav-link:focus{
-    border-bottom: 3px solid #FA5959 !important;
-    border-radius: 0;
-}
+    &.active{
+        color: black !important;
+        border-bottom: 3px solid #FA5959 !important;
+        border-radius: 0; 
+    }
 
-.nav .nav-item .nav-link:active{
-    border-bottom: 3px solid #FA5959 !important;
-    border-radius: 0;
-}
+
+  
+    };
+};
 
 .nav .nav-item .nav-link{
     color: black;
 }
 
-.nav {
-    border-bottom: 1px solid #b2b2b2;
-    border-radius: 0;
+.line{
+    border-bottom: 1px solid #e5e5e5;
+    border-radius: 0;  
     
-}
+};
         
 
 
 
+div a svg path:hover{
+    fill: #FA5959;
+    transition: ease-out 0.5s;
 
+};
 
